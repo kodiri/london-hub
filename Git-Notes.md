@@ -13,7 +13,7 @@ git checkout master // Switch to the master branch
 git rebase upstream/master or git merge upstream master 
 git checkout "Your-branch' // Switch back to your git branch for further editing
 
-git merge master 'Your-branch'
+git merge master 'Your-branch' //To reconcile your branch with the updated master
 
 See this stack overflow article for more details.
 Please run the repeatable commands above before submitting a pull request.
