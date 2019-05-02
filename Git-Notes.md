@@ -1,13 +1,18 @@
 Some git notes 
 
+For committing changes your branch 
 
 git add .
 git commit -m 'Your commit message here'
-git push origin "steves-input"  
+git push origin 'Your-branch'  
 
+For fetching changes from upstream 
+'Repeatable commands'
 git fetch upstream
 git checkout master
 git rebase upstream/master or git merge upstream master
+
+
 See this stack overflow article for more details.
 Please run the repeatable commands above before submitting a pull request.
 If you are worried about losing your own work you can stash your changes with git stash before running the 3 repeatable commands above.
