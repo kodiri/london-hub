@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotels questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>London Hub</h1>
+    </div>
+
+    <div class="main">
+        <div class="questions" onclick="toggleButtons('selectLocation')">
+            Select Location
+        </div>
+        <select id="selectLocation">
+            <option value="Convent Garden">Convent Garden</option>
+            <option value="Soho">Soho</option>
+            <option value="Clapham">Clapham</option>
+            <option value="St James">St James</option>
+            <option value="South Bank">South Bank</option>
+            <option value="Mayfair">Mayfair</option>
+            <option value="Brixton">Brixton</option>
+            <option value="Shoreditch">Shoreditch</option>
+            <option value="China Town">China Town</option>
+        </select>
+
+        <div class="questions" onclick="toggleButtons('kitchenSelector')">
+            What kind of kitchen do you prefer?
+        </div>
+
+        <select id="kitchenSelector">
+            <option value="italian">Italian</option>
+            <option value="asian">Asian</option>
+            <option value="mediterranean">Mediterranean</option>
+        </select>
+
+        <div class="questions" onclick="toggleButtons('ratingRestaurants')">
+            Select Restaurants rating?
+        </div>
+        <select id="ratingRestaurants">
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+            <option value="6">6 stars</option>
+        </select>
+
+        <div class="questions" onclick="searchRestaurants()">
+            SEARCH
+        </div>
+
+        <div class="questions">
+            <a href="index.html">Go back to Home Page</a>
+        </div>
+
+        <div id='result'></div>
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
