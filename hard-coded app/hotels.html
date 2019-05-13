@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotels questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>London Hub</h1>
+    </div>
+
+    <div class="main">
+        <div class="questions" onclick="toggleButtons('selectLocationHotels')">
+            Select Location
+        </div>
+        <select id="selectLocationHotels" required>
+            <option value="Mayfair">Mayfair</option>
+            <option value="Shoreditch">Shoreditch</option>
+            <option value="Soho">Soho</option>
+            <option value="London Bridge">London Bridge</option>
+            <option value="Mansion House">Mansion House</option>
+            <option value="Marylebone">Marylebone</option>
+            <option value="Fitzrovia">Fitzrovia</option>
+            <option value="Paddington">Paddington</option>
+            <option value="Bayswater">Bayswater</option>
+        </select>
+
+        <div class="questions" onclick="toggleButtons('priceBox')">
+            What is your price range?
+        </div>
+
+        <div id="priceBox">(£100 - £500):
+            <input type="range" id="price" min="100" max="500" step='10' onchange="evalSlider()" />
+            <output id="sliderVal"></output>
+        </div>
+
+        <div class="questions" onclick="toggleButtons('purpose')">
+            What is the purpose of your holiday?
+        </div>
+
+        <select id="purpose">
+            <option value='holiday'>Holiday</option>
+            <option value='family'>Family</option>
+            <option value='leisure'>Leisure</option>
+
+        </select>
+
+        <div class="questions" onclick="toggleButtons('ratingHotels')">
+            Select Hotels rating?
+        </div>
+        <select id="ratingHotels">
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+            <option value="6">6 stars</option>
+
+        </select>
+
+        <div class="questions" onclick="searchHotels()">
+            SEARCH
+        </div>
+
+        <div class="questions">
+            <a href="index.html">Go back to Home Page</a>
+        </div>
+        <div id='result'></div>
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

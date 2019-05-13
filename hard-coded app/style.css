@@ -1,0 +1,78 @@
+
+
+.first,
+.header{
+text-align: center;
+font-family: Georgia, serif;
+font-size: 26px;
+letter-spacing: 0.6px;
+word-spacing: 3.4px;
+color: #000000;
+text-decoration: underline solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+#priceBox,
+#purpose,
+#rating,
+#selectLocation,
+#kitchenSelector,
+#selectLocationHotels,
+#ratingHotels,
+#ratingRestaurants{
+    display: none;
+    margin-left: 10%;
+}
+
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-45%, -50%);
+}
+
+.second,
+.questions {
+	background-color:#2e466e;
+	border-radius:17px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:15px 25px;
+    text-shadow:0px 1px 0px #263666;
+    margin: 5px;
+    display: block;
+    position: relative;
+   
+}
+.second:hover,
+.questions:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.second:active,
+.questions:active {
+	position:relative;
+    top:1px;
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    display:inline-block; 
+}
+
+.header{
+    text-align: center;
+
+}
+
+
+    
+
+
